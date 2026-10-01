@@ -1,0 +1,26 @@
+@import "../../../scss/_variables.scss";
+
+.block-cusine {
+  .cusine-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .each-cusine {
+      width: calc((100% - 60px) / 3);
+      .top {
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

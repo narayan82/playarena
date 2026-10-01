@@ -1,0 +1,187 @@
+@import "../../../scss/_variables.scss";
+
+.block-date-picker {
+  .top-section {
+    display: flex;
+    gap: ptr(29px);
+    align-items: flex-start;
+    padding-bottom: ptr(10px);
+    @include mobile {
+      gap: ptr(10px);
+      flex-wrap: wrap;
+      padding-bottom: ptr(54px);
+    }
+    .input-div {
+      width: 100%;
+      flex-grow: 1;
+      position: relative;
+      max-width: ptr(698px);
+
+      &::after {
+        top: 0;
+        right: 0;
+        content: "";
+        width: ptr(50px);
+        height: ptr(50px);
+        position: absolute;
+        pointer-events: none;
+        background-size: ptr(25px);
+        background-position: center;
+        background-color: $lightYellow;
+        background-repeat: no-repeat;
+        background-image: url("../../../img/calendar-black.svg");
+      }
+      input {
+        width: 100%;
+        outline: none;
+        color: $black;
+        border-radius: 0;
+        height: ptr(50px);
+        font-size: ptr(16px);
+        line-height: ptr(26px);
+        border: 1px solid transparent;
+        padding: 0 ptr(71px) 0 ptr(21px);
+        background-color: $lightYellow;
+
+        @include mobile {
+          min-width: ptr(300px);
+        }
+
+        &:focus {
+          border: 1px solid $white;
+          background-color: #edf5bff3;
+        }
+      }
+    }
+    .warning {
+      width: 100%;
+      display: none;
+      position: relative;
+      &::before {
+        z-index: 1;
+        content: "";
+        width: 11.74px;
+        left: ptr(-5px);
+        height: 11.74px;
+        position: absolute;
+        background: $black;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        top: calc(50% - ptr(6px));
+      }
+      .warning-section {
+        z-index: 1;
+        font-weight: 500;
+        margin-bottom: 0;
+        position: relative;
+        font-size: ptr(16px);
+        line-height: ptr(21px);
+        p {
+          margin: 0;
+          padding: 0;
+          color: $white;
+          font-size: ptr(16px);
+          line-height: ptr(26px);
+          @include mobile {
+            color: #8b8b8b;
+          }
+        }
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .content-wrapper {
+    display: none;
+    margin-top: ptr(30px);
+    @include mobile {
+      margin-top: 0;
+    }
+    &.active {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .row-2 {
+      display: flex;
+      gap: ptr(22px);
+      justify-content: space-between;
+
+      @include mobile {
+        flex-wrap: wrap;
+      }
+      .single-row {
+        width: 100%;
+        color: $white;
+        display: flex;
+        @include mobile {
+          gap: ptr(26px);
+          flex-wrap: wrap;
+        }
+        .left {
+          position: relative;
+          max-width: ptr(150px);
+          padding-right: ptr(30px);
+
+          @include mobile {
+            padding: 0;
+            max-width: 100%;
+          }
+
+          &::after {
+            right: 0;
+            left: auto;
+            width: 1px;
+            content: "";
+            top: ptr(4px);
+            display: block;
+            position: absolute;
+            background-color: $white;
+            height: calc(100% - ptr(8px));
+            @include mobile {
+              display: none;
+            }
+          }
+          p {
+            color: $white;
+            font-weight: 700;
+            font-size: ptr(18px);
+            line-height: ptr(25px);
+            text-transform: uppercase;
+          }
+        }
+        .right {
+          width: 100%;
+          display: flex;
+          padding-left: ptr(55px);
+          justify-content: space-between;
+          @include mobile {
+            gap: ptr(23px);
+            padding-left: 0;
+            flex-wrap: wrap;
+          }
+
+          .each-content {
+            @include mobile {
+              width: calc((100% - ptr(54px)) / 2);
+            }
+            .top {
+              gap: ptr(8px);
+              display: flex;
+              margin-bottom: ptr(4px);
+            }
+            .bottom-content {
+              color: $white;
+              font-size: ptr(16px);
+              line-height: ptr(21px);
+              @include mobile {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

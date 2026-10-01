@@ -1,0 +1,16 @@
+{
+  "apiVersion": 2,
+  "name": "acf/sample-block",
+  "title": "Sample Block",
+  "description": "A custom values block.",
+  "style": ["file:./css/sample-block.min.css"],
+  "script": ["sample-block.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["values", "slider"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "sample-block.php"
+  },
+  "align": "full"
+}

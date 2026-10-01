@@ -1,0 +1,71 @@
+.single-academies-page {
+  .academy-sec-2 {
+    padding: ptr(40px) 0 ptr(34px) 0;
+    .wp-block-group__inner-container {
+      @extend .wrap;
+      max-width: $content_width;
+      .wp-block-heading {
+        margin-bottom: ptr(10px);
+        text-transform: uppercase;
+      }
+      .wp-block-table {
+        width: 100%;
+        margin-top: ptr(24px);
+        max-width: ptr(1080px);
+        @include mobile {
+          margin-left: ptr(-20px);
+          margin-right: ptr(-20px);
+          width: calc(100% + ptr(40px));
+          max-width: calc(100% + ptr(40px));
+        }
+        table {
+          width: 100%;
+          thead {
+            border: none;
+            background-color: $white;
+            th {
+              border: none;
+              text-align: left;
+              font-size: ptr(16px);
+              font-family: $primary_font;
+              padding: ptr(17px) ptr(10px) ptr(12px) ptr(20px);
+
+              @include mobile {
+                padding: ptr(12px) ptr(8px) ptr(12px) ptr(8px);
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                border: none;
+                padding: ptr(17px) ptr(10px) ptr(12px) ptr(20px);
+                @include mobile {
+                  padding: ptr(12px) ptr(8px) ptr(12px) ptr(8px);
+                }
+              }
+            }
+            tr:nth-child(odd) {
+              background-color: $lightBlue;
+            }
+            tr:nth-child(even) {
+              background-color: $lightYellow;
+            }
+          }
+        }
+      }
+    }
+  }
+  .academy-sec-3 {
+    padding: ptr(21px) 0 ptr(50px) 0;
+    .wp-block-heading {
+      @extend .wrap;
+      max-width: $content_width;
+      text-transform: uppercase;
+    }
+    .block-coaches {
+      margin-top: ptr(34px);
+      padding-left: calc((100% - ($content_width - ptr(80px))) / 2);
+    }
+  }
+}

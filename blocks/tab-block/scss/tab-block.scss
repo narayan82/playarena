@@ -1,0 +1,173 @@
+@import "../../../scss/_variables.scss";
+
+.block-tab-block {
+  .tab-section {
+    background-color: $greenBG;
+    > .wrap {
+      max-width: ptr(1160px);
+      .tab-wrap {
+        display: flex;
+        align-items: center;
+        margin-right: ptr(37px);
+        border-bottom: ptr(3px) solid $black;
+        @include mobile {
+          border: none;
+          margin-right: 0;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .p-regular {
+          padding-right: ptr(48px);
+          @include mobile {
+            padding-right: 0;
+            margin-bottom: ptr(33px);
+          }
+        }
+        .tab-container-wrap {
+          display: flex;
+          @include mobile {
+            display: none;
+          }
+          .tab-container {
+            display: flex;
+            align-items: center;
+            &:hover {
+              background: white;
+              transition: 0.3s;
+            }
+            .tab {
+              outline: none;
+              border: none;
+              display: block;
+              cursor: pointer;
+              font-weight: 700;
+              font-size: ptr(16px);
+              transition: all 0.3s;
+              line-height: ptr(26px);
+              background-color: transparent;
+              padding: ptr(20px) ptr(40px);
+              &.active {
+                color: $white;
+                background-color: $black;
+              }
+              &:focus {
+                outline: 1px solid $black;
+              }
+            }
+          }
+        }
+        .mobile-only-tab {
+          display: none;
+          @include mobile {
+            display: flex;
+            margin: 0 ptr(-20px);
+            width: calc(100% + ptr(40px));
+          }
+
+          select {
+            flex-grow: 1;
+            height: ptr(60px);
+            font-weight: 700;
+            text-align: center;
+            font-size: ptr(16px);
+            line-height: ptr(21px);
+            background-color: $white;
+            border-right: ptr(20px) solid transparent;
+          }
+          .btn {
+            width: 100%;
+            border: none;
+            outline: none;
+            height: ptr(60px);
+            max-width: ptr(61px);
+            background-color: $black;
+            &.next-btn {
+              transform: rotate(180deg);
+            }
+            &:disabled {
+              background-color: #cccccc;
+            }
+          }
+        }
+      }
+    }
+  }
+  .slider-top-sec {
+    margin-top: ptr(56px);
+    margin-bottom: ptr(48px);
+    .wrap {
+      max-width: ptr(1160px);
+    }
+    h2 {
+      letter-spacing: 0;
+      padding-bottom: ptr(10px);
+      text-transform: uppercase;
+    }
+    .p-regular {
+      max-width: ptr(912px);
+    }
+  }
+  .slider-sec-outer {
+    width: 100%;
+    transition: 400ms;
+    position: relative;
+    margin-bottom: ptr(62px);
+    padding-left: calc((100% - (ptr(1160px) - ptr(80px))) / 2);
+    .slider-container {
+      .single-slide {
+        width: 100%;
+        margin: 0 ptr(30px);
+        max-width: ptr(308px);
+        @include mobile {
+          margin: 0 ptr(20px);
+        }
+        .thumbnail {
+          width: 100%;
+          height: auto;
+          display: block;
+          object-fit: cover;
+          aspect-ratio: 307 / 200;
+          margin-bottom: ptr(18px);
+        }
+        .slide-title {
+          font-weight: 700;
+          font-size: ptr(24px);
+          line-height: ptr(50px);
+          margin-bottom: ptr(15px);
+          font-family: $primary_font;
+        }
+        .slide-description {
+          color: $black;
+          font-weight: 300;
+          font-size: ptr(14px);
+          line-height: ptr(25px);
+          margin-bottom: ptr(25px);
+        }
+        .button {
+          display: flex;
+          color: $blue;
+          font-weight: 500;
+          align-items: center;
+          font-size: ptr(16px);
+          padding: ptr(14px) 0;
+          line-height: ptr(26px);
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          justify-content: space-between;
+          border-top: 1px solid #8b8b8b;
+          .icon-div {
+            display: flex;
+            width: ptr(40px);
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #8b8b8b;
+            svg {
+              width: auto;
+              height: ptr(21px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

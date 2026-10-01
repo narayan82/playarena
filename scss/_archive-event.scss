@@ -1,0 +1,30 @@
+.event-archive-page {
+  .top-section {
+    background-color: #ccc;
+    padding: ptr(60px) 0;
+    h2 {
+      font-size: ptr(40px);
+      font-weight: 500;
+      margin-bottom: ptr(24px);
+    }
+    p {
+    }
+  }
+  .content-wrapper {
+    margin-top: ptr(24px);
+    padding-bottom: ptr(24px);
+    .count {
+      font-weight: 700;
+      font-size: ptr(20px);
+      margin-bottom: ptr(24px);
+    }
+    .event-outer-wrapper {
+      gap: ptr(20px);
+      display: flex;
+      flex-wrap: wrap;
+      .each-event {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../../scss/_variables.scss";
+
+.block-food-item-list {
+  display: flex;
+  gap: ptr(62px);
+  flex-wrap: wrap;
+  @include mobile {
+    gap: ptr(40px);
+  }
+  .single-item {
+    width: calc((100% - ptr(124px)) / 3);
+    @include mobile {
+      width: 100%;
+    }
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 307 / 200;
+      margin-bottom: ptr(18px);
+    }
+    .slide-title {
+      font-weight: 700;
+      font-size: ptr(40px);
+      line-height: ptr(50px);
+      margin-bottom: ptr(19px);
+      font-family: $primary_font;
+      @include mobile {
+        font-size: ptr(34px);
+        line-height: ptr(43px);
+      }
+    }
+    .slide-description {
+      color: $black;
+      font-weight: 300;
+      font-size: ptr(16px);
+      line-height: ptr(25px);
+      margin-bottom: ptr(22px);
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    .button {
+      display: flex;
+      color: $blue;
+      font-weight: 500;
+      align-items: center;
+      font-size: ptr(16px);
+      line-height: ptr(26px);
+      justify-content: space-between;
+      border-top: 1px solid #8b8b8b;
+      .icon-div {
+        display: flex;
+        width: ptr(40px);
+        align-items: center;
+        padding: ptr(14px) 0;
+        justify-content: center;
+        border-left: 1px solid #8b8b8b;
+        svg {
+          width: auto;
+          height: ptr(21px);
+        }
+      }
+    }
+  }
+}

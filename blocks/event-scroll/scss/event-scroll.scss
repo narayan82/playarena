@@ -1,0 +1,63 @@
+@use "../../../scss/_variables.scss" as *;
+.block-event-scroll {
+  @include mobile {
+  }
+  @include desktop {
+  }
+  .event-scroll-slider {
+    overflow: hidden;
+    background-color: #e3b4c1;
+    padding: ptr(24px);
+    position: relative;
+    @include mobile {
+      padding: ptr(16px);
+    }
+
+    .slider-track {
+      display: flex;
+      gap: ptr(32px);
+      animation: scroll-left 20s linear infinite;
+      width: max-content;
+      @include mobile {
+        gap: ptr(42px);
+      }
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .event-item {
+      color: #000;
+      gap: ptr(12px);
+      display: flex;
+      align-items: center;
+      min-width: ptr(80px);
+      text-align: center;
+      font-size: ptr(14px);
+      .event-label {
+        color: #000;
+        font-weight: 300;
+        font-size: ptr(24px);
+        line-height: ptr(28px);
+        @include mobile {
+          font-size: ptr(20px);
+          line-height: ptr(23px);
+        }
+      }
+      img {
+        height: ptr(40px);
+        object-fit: contain;
+        margin-bottom: ptr(6px);
+        @include mobile {
+          width: ptr(34px);
+          height: ptr(34px);
+        }
+      }
+    }
+  }
+}

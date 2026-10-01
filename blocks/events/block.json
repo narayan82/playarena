@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/events",
+  "title": "Events",
+  "description": "A custom Events block.",
+  "style": ["file:./css/events.min.css"],
+  "script": ["events.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["events", "Events", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "events.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

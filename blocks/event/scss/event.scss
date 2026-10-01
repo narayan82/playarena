@@ -1,0 +1,9 @@
+@use "../../../scss/_variables.scss" as *;
+.block-event {
+  @include mobile {
+
+  }
+  @include desktop {
+    
+  }
+}

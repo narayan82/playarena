@@ -1,0 +1,177 @@
+@import "../../../scss/_variables.scss";
+
+.block-academies-tab {
+  .academy-tab-section {
+    background-color: $lightBlue;
+    > .wrap {
+      max-width: $content_width;
+      .tab-wrap {
+        display: flex;
+        align-items: center;
+        margin-right: ptr(37px);
+        border-bottom: ptr(3px) solid $black;
+        @include mobile {
+          border-bottom: 0;
+          margin-right: 0;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .p-regular {
+          padding-right: ptr(48px);
+          @include mobile {
+            padding-right: 0;
+            margin-bottom: ptr(34px);
+          }
+        }
+        .tab-container-wrap {
+          display: flex;
+          @include mobile {
+            display: none;
+          }
+          .tab-container {
+            display: flex;
+            align-items: center;
+            .tab {
+              outline: none;
+              border: none;
+              display: block;
+              cursor: pointer;
+              font-weight: 400;
+              font-size: ptr(16px);
+              transition: all 0.3s;
+              line-height: ptr(26px);
+              background-color: transparent;
+              padding: ptr(20px) ptr(60px);
+              &.active {
+                color: $white;
+                background-color: $black;
+              }
+              &:focus {
+                outline: 1px solid $black;
+              }
+            }
+          }
+        }
+        .mobile-only-tab {
+          display: none;
+          @include mobile {
+            display: flex;
+            margin: 0 ptr(-20px);
+            width: calc(100% + ptr(40px));
+          }
+
+          select {
+            flex-grow: 1;
+            height: ptr(60px);
+            font-weight: 700;
+            text-align: center;
+            font-size: ptr(16px);
+            line-height: ptr(21px);
+            background-color: $white;
+            border-right: ptr(20px) solid transparent;
+          }
+          .btn {
+            width: 100%;
+            border: none;
+            outline: none;
+            height: ptr(60px);
+            max-width: ptr(61px);
+            background-color: $black;
+            &.next-btn {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .academy-tab-content {
+    margin: ptr(40px) 0 ptr(60px) 0;
+    .wrap {
+      max-width: $content_width;
+    }
+
+    .tab-pane {
+      display: none;
+      &.active {
+        width: 100%;
+        display: block;
+        .tab-content-container {
+          display: flex;
+          gap: ptr(60px);
+          flex-wrap: wrap;
+        }
+        .academy-item-coun {
+          color: $black;
+          font-size: ptr(20px);
+          margin: ptr(40px) 0;
+          line-height: ptr(30px);
+          strong {
+            font-weight: 700;
+          }
+        }
+
+        .academy-item {
+          display: flex;
+          flex-direction: column;
+          width: calc((100% - ptr(120px)) / 3);
+          @include mobile {
+            width: 100%;
+          }
+          .title-div {
+            flex-grow: 1;
+          }
+        }
+      }
+      .thumbnail {
+        width: 100%;
+        height: ptr(200px);
+        margin-bottom: ptr(18px);
+        border: 1px solid #c7c7c7;
+        img {
+          width: 100%;
+          display: block;
+          object-fit: contain;
+          height: ptr(200px);
+        }
+      }
+      h2 {
+        font-weight: 700;
+        font-size: ptr(40px);
+        margin-bottom: ptr(19px);
+      }
+      .description {
+        font-weight: 300;
+        font-size: ptr(16px);
+        margin-bottom: ptr(22px);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+      .button {
+        display: flex;
+        color: $blue;
+        font-weight: 500;
+        align-items: center;
+        font-size: ptr(16px);
+        padding: ptr(14px) 0;
+        line-height: ptr(26px);
+        justify-content: space-between;
+        border-top: 1px solid #8b8b8b;
+        .icon-div {
+          display: flex;
+          width: ptr(40px);
+          align-items: center;
+          justify-content: center;
+          border-left: 1px solid #8b8b8b;
+          svg {
+            width: auto;
+            height: ptr(21px);
+          }
+        }
+      }
+    }
+  }
+}

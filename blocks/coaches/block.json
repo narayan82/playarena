@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/coaches",
+  "title": "Coaches",
+  "description": "A custom Coaches block.",
+  "style": ["file:./css/coaches.min.css"],
+  "script": ["coaches.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["coaches", "Coaches", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "coaches.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

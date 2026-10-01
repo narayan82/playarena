@@ -1,0 +1,21 @@
+{
+  "apiVersion": 3,
+  "name": "acf/featured-events",
+  "title": "Featured Events",
+  "description": "A custom Featured Events block.",
+  "style": ["file:./css/featured-events.min.css"],
+  "script": ["featured-events.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["featured-events", "Featured Events", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "featured-events.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "1.0.4"
+}

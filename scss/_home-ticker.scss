@@ -1,0 +1,54 @@
+.home .fp-sec-scroll {
+  overflow: hidden;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  background: #edffb3;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 4px 18px rgba(35, 60, 64, 0.05);
+  -webkit-backdrop-filter: blur(14px) saturate(115%);
+  backdrop-filter: blur(14px) saturate(115%);
+
+  .wp-block-group__inner-container {
+    display: block;
+    animation: none;
+  }
+
+  .home-ticker-track {
+    display: flex;
+    width: max-content;
+    max-width: none;
+    gap: 0;
+    animation: home-ticker-loop 40s linear infinite;
+  }
+
+  .home-ticker-group {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: max-content;
+    min-width: 100vw;
+    max-width: none;
+    margin: 0;
+    // The trailing space matches the gap at the join between the two groups.
+    padding: 0 50px 0 0;
+    gap: 50px;
+
+    > * { flex-shrink: 0; margin: 0; }
+  }
+
+  &:hover .home-ticker-track,
+  &:focus-within .home-ticker-track { animation-play-state: paused; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-ticker-track { animation: none; }
+    .home-ticker-group[aria-hidden="true"] { display: none; }
+  }
+}
+
+@keyframes home-ticker-loop {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/hero-video",
+  "title": "Hero Video",
+  "description": "A custom Hero Video block.",
+  "style": ["file:./css/hero-video.min.css"],
+  "script": ["hero-video.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["hero-video", "Hero Video", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "hero-video.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

@@ -1,0 +1,109 @@
+@use "../../../scss/_variables.scss" as *;
+.block-bottom-image-scroll {
+  @include mobile {
+  }
+  @include desktop {
+  }
+  margin: ptr(173px) 0 ptr(39px) ptr(48px);
+  background-color: #fff;
+  @include mobile {
+    margin: ptr(72px) 0 ptr(72px) ptr(20px);
+  }
+  @include mobile {
+    .slick-slide,
+    .scroll-item {
+      display: block;
+      width: 100% !important;
+      float: none;
+    }
+
+    .slick-track {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      align-items: stretch;
+    }
+  }
+  .bottom-image-scroll-outer {
+    overflow: hidden;
+
+    .bottom_image_scroll-slider {
+      display: flex;
+      gap: ptr(80px);
+      overflow-x: auto;
+      padding-bottom: ptr(10px);
+      scroll-behavior: smooth;
+
+      .scroll-item {
+        max-width: ptr(480px);
+        margin: 0 ptr(40px);
+        width: 100%;
+        max-height: ptr(639px);
+        overflow: hidden;
+        @include mobile {
+          margin: 0 ptr(18px);
+          max-width: ptr(290px);
+        }
+
+        img {
+          width: ptr(480px);
+
+          height: auto;
+          display: block;
+          @include mobile {
+            width: 338.881px;
+            height: 451.808px;
+          }
+        }
+
+        &.content-type {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          background-color: #ffeef8;
+          padding: 20px;
+          min-height: ptr(639px);
+          @include mobile {
+            min-height: 451.808px;
+          }
+
+          .logo {
+            width: 196px;
+            height: 72px;
+            margin-bottom: ptr(165px);
+            @include mobile {
+              margin-bottom: ptr(155px);
+            }
+          }
+          .rating {
+            width: 202px;
+            height: 34px;
+            margin-bottom: ptr(24px);
+            @include mobile {
+              width: 102px;
+              height: 24px;
+            }
+          }
+
+          p {
+            color: #000;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 37.8px;
+            margin-bottom: ptr(12px);
+            @include mobile {
+              font-size: ptr(16px);
+              line-height: 18px;
+            }
+          }
+
+          h3 {
+            color: #6c6c6c;
+            font-size: ptr(16px);
+            font-weight: 300;
+            line-height: 21.28px;
+          }
+        }
+      }
+    }
+  }
+}

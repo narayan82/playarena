@@ -1,0 +1,171 @@
+.block-hero-slider {
+  width: 100%;
+  overflow: hidden;
+  .img-section {
+    position: relative;
+    .each-content {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: ptr(578px);
+      position: absolute;
+      transition: all 400ms;
+      background-color: #000;
+      @media (max-width: ptr(498px)) {
+        height: auto;
+      }
+      .progress {
+        display: none;
+        left: ptr(20px);
+        height: ptr(6px);
+        bottom: ptr(20px);
+        padding: ptr(1px);
+        position: absolute;
+        border-radius: ptr(6px);
+        width: calc(100% - ptr(40px));
+        background-color: rgba($black, 0.5);
+        @include mobile {
+          display: block;
+        }
+        .progress-bar {
+          width: 0;
+          max-width: 100%;
+          height: ptr(4px);
+          border-radius: ptr(4px);
+        }
+      }
+      img,
+      video {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: ptr(578px);
+        @media (max-width: ptr(498px)) {
+          height: auto;
+          aspect-ratio: 1/1;
+        }
+      }
+
+      &:first-child {
+        display: block;
+        position: static;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+  .tab-section {
+    display: flex;
+    @include mobile {
+      display: block;
+    }
+    .single-tab {
+      width: 100%;
+      display: flex;
+      transition: all 400ms;
+      flex-direction: column;
+      margin-bottom: ptr(-100px);
+      justify-content: space-between;
+      @include mobile {
+        display: none;
+        margin-bottom: 0;
+      }
+      .top-section {
+        padding: ptr(17px) ptr(20px);
+        @include mobile {
+          padding: ptr(20px);
+        }
+        .title-section {
+          display: flex;
+          gap: ptr(17.7px);
+          align-items: center;
+          margin-bottom: ptr(8px);
+          @include mobile {
+            margin-bottom: ptr(10px);
+          }
+          svg {
+            width: auto;
+            display: block;
+            height: ptr(40px);
+            path {
+              fill: #000;
+            }
+            @include mobile {
+              display: none;
+            }
+          }
+          h2 {
+            color: $black;
+            font-weight: 600;
+            font-size: ptr(32px);
+            line-height: ptr(40px);
+            @include mobile {
+              font-weight: 700;
+              font-size: ptr(36px);
+              line-height: ptr(45px);
+            }
+          }
+        }
+        p {
+          color: $black;
+          font-size: ptr(14px);
+          line-height: ptr(19px);
+          @include mobile {
+            font-weight: 500;
+            font-size: ptr(16px);
+            line-height: ptr(26px);
+          }
+        }
+      }
+      .button-div {
+        padding: ptr(25px) ptr(20px);
+        @include mobile {
+          padding: ptr(20px);
+          padding-top: 0;
+        }
+        .button {
+          width: 100%;
+          justify-content: space-between;
+          @include mobile {
+            max-width: ptr(374px);
+          }
+        }
+      }
+      &.active {
+        transform: translate(0, ptr(-100px));
+        @include mobile {
+          display: block;
+          transform: translate(0, 0);
+        }
+      }
+    }
+  }
+  .mobile-tab-section {
+    display: none;
+    @include mobile {
+      display: flex;
+      padding: ptr(10px);
+      border-radius: ptr(10px);
+      background-color: $black;
+      justify-content: space-between;
+      .single-tab {
+        width: 100%;
+        display: flex;
+        height: ptr(40px);
+        align-items: center;
+        max-width: ptr(40px);
+        transition: all 400ms;
+        border-radius: ptr(7px);
+        justify-content: center;
+        svg {
+          height: ptr(20px);
+          path {
+            transition: all 400ms;
+          }
+        }
+      }
+    }
+  }
+}

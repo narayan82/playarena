@@ -1,0 +1,20 @@
+{
+  "apiVersion": 2,
+  "name": "acf/event-scroll",
+  "title": "Event Scroll",
+  "description": "A custom Event Scroll block.",
+  "style": ["file:./css/event-scroll.min.css"],
+  "script": ["event-scroll.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["event-scroll", "Event Scroll", "custom", "matsio"],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "event-scroll.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

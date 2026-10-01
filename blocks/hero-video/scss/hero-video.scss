@@ -1,0 +1,12 @@
+@import "../../../scss/_variables.scss";
+
+.block-hero-video {
+  width: 100%;
+  video,
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1379 / 476;
+  }
+}

@@ -1,0 +1,28 @@
+// Share the event layout while keeping the corporate page's neutral palette.
+body.page-id-36 {
+  --event-activity-background: #e8e8e8;
+  --event-food-background: #fff;
+
+  .single-hero-sec.food-court {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.12));
+
+    .wp-block-group__inner-container .head-sec {
+      padding-bottom: 0 !important;
+
+      .title-row {
+        margin-top: 0;
+        > .wp-block-image {
+          width: 120px !important;
+          height: auto !important;
+        }
+        .hero-sub-text { margin: 0 !important; }
+      }
+    }
+
+    @media (max-width: 639px) {
+      .wp-block-group__inner-container .head-sec .title-row > .wp-block-image {
+        width: 100% !important;
+      }
+    }
+  }
+}

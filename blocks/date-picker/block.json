@@ -1,0 +1,21 @@
+{
+  "apiVersion": 3,
+  "name": "acf/date-picker",
+  "title": "Date Picker",
+  "description": "A custom Date Picker block.",
+  "style": ["file:./css/date-picker.min.css"],
+  "script": ["date-picker.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["date-picker", "Date Picker", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "date-picker.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "1.2.3"
+}

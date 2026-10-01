@@ -1,0 +1,14 @@
+.page-food-section-1 {
+  background-color: #ccc;
+  padding: 60px 0;
+  .wp-block-group__inner-container {
+    @extend .wrap;
+    h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}

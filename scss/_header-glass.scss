@@ -1,0 +1,188 @@
+// The homepage hero starts behind the fixed header on desktop and mobile.
+body.home {
+  padding-top: 0 !important;
+}
+
+.header-main {
+  background: transparent;
+  isolation: isolate;
+
+  // Blur a separate layer so fixed-position navigation keeps its viewport anchor.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: rgba(8, 12, 14, 0.82);
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    backdrop-filter: blur(16px) saturate(120%);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transition: background-color 220ms ease, box-shadow 220ms ease;
+  }
+
+  &.header-is-scrolled::before {
+    background-color: #000;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.14);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::before { transition: none; }
+  }
+}
+
+// Mega Menu retains focus/open-state fills after pointer exit; keep navigation clear.
+.header-main #mega-menu-wrap-header-menu #mega-menu-header-menu {
+  > li.mega-menu-item:not(.mega-btn):not(#mega-menu-item-1911) > a.mega-menu-link {
+    background: transparent !important;
+
+    &:focus-visible {
+      outline: 2px solid #b3f0ff;
+      outline-offset: 3px;
+    }
+  }
+}
+
+// The Book Now entry is a plain menu link in WordPress; style its actual ID.
+.header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap
+ul.mega-menu#mega-menu-header-menu > li#mega-menu-item-1911 > a.mega-menu-link {
+  margin-left: 10px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 1px solid rgba(179, 240, 255, 0.5);
+  border-radius: 10px;
+  background: #0371e6;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24), 0 4px 12px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: background-color 180ms ease, border-color 180ms ease;
+
+  &::after { display: none; }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #0371e6;
+    border-color: rgba(179, 240, 255, 0.85);
+    color: #fff !important;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #b3f0ff;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+// Play's existing mega-menu grid: change surfaces only, not positioning or spacing.
+.header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap
+ul.mega-menu#mega-menu-header-menu > li#mega-menu-item-7 > ul.mega-sub-menu {
+  border-radius: 0 0 14px 14px;
+  background: rgba(250, 252, 250, 0.96);
+  border-color: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 14px 36px rgba(0, 0, 0, 0.16);
+
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(245, 250, 247, 0.86));
+    -webkit-backdrop-filter: blur(18px) saturate(115%);
+    backdrop-filter: blur(18px) saturate(115%);
+  }
+
+  // Let the panel show through the nested grid; retain the colored category links.
+  ul.mega-sub-menu {
+    background: transparent;
+  }
+
+  li.mega-menu-column.mega-each-location > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+}
+
+// Compact glass dropdowns for Participate, Host and F&B.
+@each $menu-id in 8, 10, 183 {
+  .header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap
+  ul.mega-menu#mega-menu-header-menu > li#mega-menu-item-#{$menu-id} > ul.mega-sub-menu {
+    box-sizing: border-box;
+    width: 280px;
+    max-width: calc(100vw - 40px);
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 0 0 14px 14px;
+    background: rgba(250, 252, 250, 0.97);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 14px 36px rgba(0, 0, 0, 0.16);
+
+    @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(245, 250, 247, 0.86));
+      -webkit-backdrop-filter: blur(18px) saturate(115%);
+      backdrop-filter: blur(18px) saturate(115%);
+    }
+
+    > li.mega-menu-item {
+      padding: 0;
+      border-bottom: none !important;
+
+      + li.mega-menu-item { margin-top: 4px; }
+
+      > a.mega-menu-link {
+        box-sizing: border-box;
+        display: block;
+        height: auto;
+        padding: 14px 16px;
+        border-radius: 9px;
+        background: transparent;
+        color: #242622;
+        white-space: normal;
+        transition: background-color 160ms ease;
+
+        &:hover,
+        &:focus-visible {
+          background: rgba(210, 229, 222, 0.48);
+          color: #242622 !important;
+        }
+
+        &:focus-visible {
+          outline: 2px solid #24695e;
+          outline-offset: -2px;
+        }
+
+        span.mega-description-group {
+          .mega-menu-title {
+            box-sizing: border-box;
+            padding-right: 22px;
+            margin-bottom: 4px;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.4;
+            &::after { opacity: 0.65; }
+          }
+
+          .mega-menu-description {
+            display: block;
+            color: #515a55;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1023px) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      > li.mega-menu-item > a.mega-menu-link { transition: none; }
+    }
+  }
+}

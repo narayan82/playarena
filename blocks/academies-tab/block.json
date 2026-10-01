@@ -1,0 +1,21 @@
+{
+  "apiVersion": 3,
+  "name": "acf/academies-tab",
+  "title": "Academies Tab",
+  "description": "A custom Academies Tab block.",
+  "style": ["file:./css/academies-tab.min.css"],
+  "script": ["academies-tab.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["academies-tab", "Academies Tab", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "academies-tab.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,64 @@
+@import "../../../scss/_variables.scss";
+
+.block-single-page-hero-carousel {
+  background-color: $lightBlue;
+  .slider-section {
+    position: relative;
+  }
+  .single-page-hero-carousel {
+    background-color: $lightBlue;
+    img {
+      width: auto;
+      display: block;
+      object-fit: cover;
+      height: ptr(350px);
+      margin: 0 ptr(1px);
+    }
+  }
+  .bottom-section {
+    .wrap {
+      display: flex;
+      align-items: center;
+      max-width: ptr(1207px);
+      justify-content: space-between;
+      @include mobile {
+        flex-wrap: wrap;
+      }
+      .left {
+        width: 100%;
+        .img-div {
+          width: 100%;
+          position: relative;
+          height: ptr(152px);
+          max-width: ptr(297px);
+          margin-top: ptr(-93px);
+          @include mobile {
+            margin-top: ptr(-40px);
+          }
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 100%;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        gap: ptr(20px);
+        align-items: flex-end;
+        margin: ptr(30px) 0 ptr(20px) 0;
+        @include mobile {
+          flex-wrap: wrap;
+          .button-div {
+            width: 100%;
+            a {
+              width: 100%;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

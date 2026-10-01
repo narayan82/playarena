@@ -1,0 +1,45 @@
+@use "sass:math";
+// - Import your fonts like this
+// @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+@import "/wp-content/themes/playarena.in/fonts/stylesheet.css";
+@import "/wp-content/themes/playarena.in/fonts/google.css";
+$primary_font: "Sora", sans-serif;
+$button_font: "helvetica_neue";
+$boxed_content_width: 1366px;
+$desktop-width: 1024px;
+$content_width: 1160px;
+
+//- Import your icon fonts like this
+// @import url('https://i.icomoon.io/public/20993f6cef/GuideMyMind/style.css');
+
+@function ptr($pxValue) {
+  @return $pxValue;
+  //@return math.div($pxValue, 16px) * 1rem;
+}
+
+@mixin mobile {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+$black: #000;
+$white: #fff;
+$blue: #007bfe;
+$grey: #e4e4e4;
+$redBG: #ffd8da;
+$blueBG: #e2f9ff;
+$greenBG: #d1ebd8;
+
+$lightRed: #ebdbcc;
+$lightBlue: #b3f0ff;
+$lightYellow: #edffb3;
+$violet: #ebd8ff;
+$hover_blue: #046edf;
+$lightOrange: #ebdbcc;

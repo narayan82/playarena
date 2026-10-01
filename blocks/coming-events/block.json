@@ -1,0 +1,21 @@
+{
+  "apiVersion": 3,
+  "name": "acf/coming-events",
+  "title": "Coming Events",
+  "description": "A custom Coming Events block.",
+  "style": ["file:./css/coming-events.min.css"],
+  "script": ["coming-events.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["coming-events", "Coming Events", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "coming-events.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "1.5.2"
+}

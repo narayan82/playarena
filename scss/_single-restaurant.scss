@@ -1,0 +1,61 @@
+.single-restaurant-page {
+  .single-hero-sec.single-restaurant {
+    .btn-row {
+      padding: 0;
+      margin-top: 0;
+      @include mobile {
+        gap: ptr(20px);
+      }
+      .wp-block-image {
+        width: ptr(297px);
+        height: ptr(152px);
+        margin-top: ptr(-75px);
+        background-color: #f1f5f6;
+        border: 1px solid #dbdada;
+        border-radius: 0 0 ptr(5px) ptr(5px);
+        @include mobile {
+          width: ptr(150px);
+          margin-top: ptr(-32px);
+        }
+        img {
+          width: auto;
+          margin: auto;
+          height: auto;
+          display: block;
+          max-width: 100%;
+        }
+      }
+      .wp-block-buttons {
+        margin: ptr(29px) 0 ptr(20px) 0;
+        @include mobile {
+          margin: ptr(10px) 0;
+        }
+      }
+    }
+  }
+  .restaurant-section-2 {
+    padding: ptr(40px) 0;
+    .wp-block-group__inner-container {
+      @extend .wrap;
+      overflow-x: hidden;
+      max-width: calc($content_width + ptr(80px));
+      .wp-block-heading {
+        margin-bottom: ptr(46px);
+      }
+    }
+  }
+  .restaurant-section-3 {
+    padding-bottom: ptr(94px);
+    @include mobile {
+      padding-bottom: ptr(32px);
+    }
+    .wp-block-group__inner-container {
+      overflow-x: hidden;
+    }
+    .wp-block-heading {
+      @extend .wrap;
+      margin-bottom: ptr(34px);
+      max-width: calc($content_width + ptr(80px));
+    }
+  }
+}

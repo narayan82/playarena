@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/membership",
+  "title": "Membership",
+  "description": "A custom Membership block.",
+  "style": ["file:./css/membership.min.css"],
+  "script": ["membership.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["membership", "Membership", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "membership.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

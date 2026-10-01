@@ -1,0 +1,52 @@
+@import "../../../scss/_variables.scss";
+
+.block-coaches {
+  position: relative;
+  .coaches-container {
+    display: flex;
+    .each-card {
+      margin: 0 ptr(30px);
+      max-width: ptr(307px);
+      .img-div {
+        width: 100%;
+        margin-bottom: ptr(18px);
+        background-color: $lightBlue;
+        img {
+          width: 100%;
+          display: block;
+          object-fit: cover;
+          height: ptr(200px);
+        }
+      }
+      h2 {
+        font-weight: 700;
+        font-size: ptr(40px);
+        line-height: ptr(50px);
+        margin-bottom: ptr(22px);
+        font-family: $primary_font;
+      }
+      .button {
+        display: flex;
+        color: $blue;
+        font-weight: 500;
+        align-items: center;
+        font-size: ptr(16px);
+        padding: ptr(14px) 0;
+        line-height: ptr(26px);
+        justify-content: space-between;
+        border-top: 1px solid #8b8b8b;
+        .icon-div {
+          display: flex;
+          width: ptr(40px);
+          align-items: center;
+          justify-content: center;
+          border-left: 1px solid #8b8b8b;
+          svg {
+            width: auto;
+            height: ptr(21px);
+          }
+        }
+      }
+    }
+  }
+}

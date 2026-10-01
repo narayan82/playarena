@@ -1,0 +1,131 @@
+// Migrated active frontend CSS from Simple Custom CSS and JS.
+// Source IDs follow the plugin's verified runtime order (24 September 2026).
+// Keep isolated from legacy @extend rules.
+
+// Plugin entry 1899: sleepover
+.block-pre-packed-fun .pre-packed-fun-slider .fun-box .price {
+	display:none !important;
+}
+
+// Plugin entry 1870: Terms
+.wrap_terms {
+	max-width:1200px;
+	padding:40px 20px;
+	margin:auto;
+}
+
+.wrap_terms p {
+	padding:10px 0px;
+	line-height:25px;
+}
+
+.wrap_terms h3 {
+	padding:10px 0px;
+	font-size:20px;
+}
+
+
+.wrap_terms h4 {
+	padding:10px 0px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.wrap_terms ul {
+	padding:10px 0px;
+	list-style:disc;
+	list-style-position:inside;
+}
+
+// Plugin entry 1700: About Us Page
+.page-id-1695 h2 {
+	padding:40px 0px 20px 0px !important;
+}
+
+.page-id-1695 p {
+	padding:15px 0px !important;
+	line-height:25px !important;
+	font-weight:300 !important;
+}
+
+.topmargin {
+	margin:50px 0px !important;
+}
+
+// Plugin entry 1434: Untitled (special button / short viewport hero)
+.spcl_btn {
+	padding:10px !important;
+	border:1px solid cornflowerblue;
+	margin-top:20px;
+	display:inline-block;
+}
+
+@media (max-height: 750px) {
+	
+
+.block-hero-slider .img-section .each-content video {
+		height:398px!important;
+	}
+
+	.block-hero-slider .img-section .each-content {
+	height:398px!important;
+}
+
+}
+
+// Plugin entry 1416: Custom Select
+.postid-1725 .single-page-activity .tab-section .tab-container .each-tab {
+	padding:14px 10px 15px !important;
+}
+
+
+.postid-806 .single-page-activity .tab-section .tab-container .each-tab {
+	padding:14px 10px 15px !important;
+}
+
+.main-footer .footer-content-wrapper .left .gform_wrapper.gravity-theme form .gform-body .gform_fields .gfield.gfield--type-email .ginput_container input[type=email] {
+	color:black !important;
+}
+
+.ginput_container_select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.ginput_container_select select {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+  /* Custom arrow space */
+  padding-right: 30px;
+  
+  /* Optional - adjust text styles */
+  font-size: 16px;
+  color: #333;
+}
+
+.ginput_container_select::after {
+  content: '▼'; /* Unicode for the down arrow */
+  font-size: 12px;
+  color: black;
+  
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents click on the arrow */
+}
+
+.ginput_container_select select:focus {
+  outline: none;
+  border-color: #999;
+}
+

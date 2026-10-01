@@ -1,0 +1,87 @@
+.single-hero-sec.food-court {
+  background-color: $lightOrange;
+  .wp-block-group__inner-container {
+    .head-sec {
+      gap: 0;
+      @extend .wrap;
+      padding-top: ptr(34px);
+      max-width: ptr(1224px);
+      justify-content: space-between;
+      @include mobile {
+        padding-top: ptr(22px);
+      }
+      .title-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-right: ptr(26px);
+        justify-content: space-between;
+        @include mobile {
+          gap: ptr(12px);
+          padding-right: 0;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+        }
+        .wp-block-heading {
+          font-weight: 700;
+          font-size: ptr(36px);
+          line-height: ptr(48px);
+          margin-top: ptr(-10px);
+          letter-spacing: -1.8px;
+          font-family: $primary_font;
+        }
+        .wp-block-image {
+          display: block;
+          width: ptr(55px);
+          height: ptr(64px);
+          @include mobile {
+            width: ptr(23px);
+            height: ptr(26px);
+          }
+        }
+      }
+    }
+    .hero-sub-text {
+      font-weight: 500;
+      font-size: ptr(16px);
+      margin-top: ptr(-15px);
+      max-width: ptr(912px);
+      line-height: ptr(26px);
+      margin-bottom: ptr(42px);
+      font-family: $primary_font;
+      @include mobile {
+        margin-top: ptr(20px);
+        margin-bottom: ptr(22px);
+      }
+    }
+    .block-hero-video {
+      width: 100%;
+      img,
+      video {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        @include mobile {
+          min-height: ptr(250px);
+        }
+      }
+    }
+  }
+}
+.food-menu-list-sec {
+  padding: ptr(40px) 0 ptr(111px) 0;
+  .wp-block-group__inner-container {
+    @extend .wrap;
+    .wp-block-heading {
+      font-weight: 700;
+      font-size: ptr(48px);
+      line-height: ptr(61px);
+      margin-bottom: ptr(40px);
+      @include mobile {
+        font-size: ptr(34px);
+        line-height: ptr(43px);
+      }
+    }
+  }
+}

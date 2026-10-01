@@ -1,0 +1,395 @@
+// Migrated from the two user-supplied Custom CSS plugin snippets.
+// Keep selectors and !important flags intact; mobile overrides follow general rules.
+// Loaded as an isolated Sass module to avoid inheriting legacy @extend selectors.
+
+.single-restaurant-page .single-hero-sec.single-restaurant .btn-row .wp-block-image{
+	display:none !important;
+}
+
+div#gform_wrapper_5,
+h2.wp-block-heading.\31 200pxmax {
+  max-width: 1200px;
+  margin: auto;
+}
+.academy_icon,
+.events_icon {
+  height: auto;
+  margin-left: 20px;
+  float: right;
+}
+.block-academies-tab .academy-tab-content .tab-pane h2,
+.block-offers-slider .single-slide h2 {
+  line-height: 30px !important;
+  font-size: 24px !important;
+}
+.block-academies-tab .academy-tab-content .tab-pane.active .academy-item-coun,
+.block-academies-tab .academy-tab-section > .wrap .tab-wrap,
+.block-offers-slider .single-slide .button,
+.fp-section-4 .wp-block-group__inner-container > .wp-block-group.is-nowrap img,
+.main-footer .logo {
+  display: none !important;
+}
+
+.single-page-activity .tab-section .tab-container .each-tab {
+  padding: 14px 16px 15px !important;
+}
+div#gform_wrapper_5 {
+  padding-top: 40px;
+}
+.single-hero-sec .wp-block-group__inner-container .head-sec .title-row .wp-block-image {
+  width: 130px !important;
+  height: 140px !important;
+}
+.single-hero-sec.food-court .wp-block-group__inner-container .head-sec .title-row .wp-block-image {
+  width: 100px !important;
+  height: 100px !important;
+}
+.archive-academy-title-sec h2,
+.single-hero-sec.food-court .wp-block-group__inner-container .head-sec {
+  padding-bottom: 20px !important;
+}
+.academy_icon {
+  width: 50px;
+}
+.events_icon {
+  width: 100px;
+}
+.academy_desc {
+  padding-bottom: 30px;
+  line-height: 26px;
+  font-size: 16px;
+}
+.p1 {
+  margin-top: 20px;
+  font-weight: 400 !important;
+}
+.page-id-834 .block-tab-block .tab-section,
+.page-id-834 .single-hero-sec {
+  background-color: #edffb3 !important;
+}
+.page-id-36 .block-tab-block .tab-section,
+.page-id-36 .single-hero-sec {
+  background-color: #e8e8e8 !important;
+}
+.enquiry_link a {
+  color: #000 !important;
+  text-decoration: underline;
+}
+.enquiry_link a:hover {
+  color: grey !important;
+}
+.booking-btn {
+  padding: 10px;
+  background: #007bfe;
+  color: #fff;
+  display: block;
+  margin-top: 30px;
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn-container svg {
+  margin: 6px 6px 0 0;
+}
+.enquiry-form-wrap .gravity-theme .gfield--type-checkbox .gfield_description .info-text {
+  min-width: 250px;
+  z-index: 100000 !important;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  font-weight: 400 !important;
+}
+.enquiry-form-top-sec {
+  background-color: #b3f0ff !important;
+}
+.enquiry-form-wrap .gravity-theme .field-small {
+  max-width: 120px !important;
+}
+.form_subheader {
+  margin-top: 20px;
+  font-weight: 700;
+}
+.wp-block-group.enquiry-form-wrap {
+  max-width: 1160px !important;
+  margin: auto;
+}
+.page-id-1390 .wp-block-group__inner-container.is-layout-constrained.wp-block-group-is-layout-constrained {
+  max-width: 1160px;
+}
+div#field_4_58 {
+  margin-top: -16px;
+}
+.enquiry-form-wrap .gravity-theme .sub-label {
+  margin-top: 10px;
+}
+.enquiry-form-wrap .gravity-theme .bg-orange {
+  padding: 32px 0 10px !important;
+}
+.enquiry-form-wrap .gravity-theme .bg-white {
+  padding: 35px 0 0 !important;
+}
+.block-date-picker .content-wrapper .row-2 .single-row .left {
+  max-width: 150px !important;
+  padding-right: 30px !important;
+}
+.sub-title.active {
+  color: #edffb3;
+}
+.header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap ul.mega-menu#mega-menu-header-menu li.mega-menu-item.mega-btn a:hover {
+  color: #fff !important;
+}
+.header-main a:hover {
+  color: #007bfe !important;
+  transition: 0.2s;
+}
+.page-id-5 .block-featured-events .each-content .top-sec {
+  border-bottom: none !important;
+}
+.block-featured-events .each-content .img-div {
+  margin-top: 0 !important;
+}
+.header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap ul.mega-menu#mega-menu-header-menu li.mega-menu-item.mega-with-description ul.mega-sub-menu {
+  border: 1px solid #000;
+}
+body .fp-section-4 .wp-block-group__inner-container .block-offers-slider {
+  transition: 0.4s;
+  padding-left: calc((100% - 1160px + 80px) / 2);
+}
+.food-menu-list-sec .wp-block-group__inner-container,
+.fp-sec-booking .wp-block-group__inner-container,
+.fp-section-4 .wp-block-group__inner-container > .wp-block-group.is-nowrap,
+.single-hero-sec .wp-block-group__inner-container .head-sec,
+.wrap {
+  max-width: 1160px !important;
+}
+.fp-sec-booking {
+  padding: 80px 0 !important;
+}
+.block-date-picker .top-section {
+  padding-bottom: 10px !important;
+}
+.block-featured-events .each-content .content-div {
+  line-height: 175% !important;
+  margin-top: 10px !important;
+}
+.single-hero-sec .wp-block-group__inner-container .hero-sub-text {
+  margin-top: 0 !important;
+  margin-bottom: 22px !important;
+}
+.block-slider-type-1 .single-slide .button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.academy_sport {
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+.block-academies-tab .academy-tab-content .tab-pane.active .tab-content-container {
+  gap: 20px !important;
+}
+.academies-template-default p {
+  margin: 20px 0 !important;
+  font-weight: 400;
+  line-height: 200% !important;
+}
+.block-offers-slider .single-slide h2 {
+  margin: 10px 0 20px !important;
+}
+.block-academies-tab .academy-tab-content .tab-pane.active .academy-item {
+  margin: 20px 0 !important;
+}
+.block-academies-tab .academy-tab-content {
+  margin: 20px 0 40px !important;
+}
+.single-academies-page .academy-sec-2 .wp-block-group__inner-container .wp-block-table table thead {
+  background: #e0ffff !important;
+}
+.batches {
+  margin-top: 30px;
+}
+.single-academies-page .academy-sec-2 .wp-block-group__inner-container .wp-block-heading {
+  margin-bottom: 30px !important;
+}
+.block-single-page-hero-carousel .bottom-section .wrap .left .img-div {
+  background: #fff;
+}
+.block-gallery-slider {
+  padding-left: 0 !important;
+}
+.single-hero-sec .wp-block-group__inner-container .head-sec .title-row .wp-block-heading,
+.single-hero-sec.food-court .wp-block-group__inner-container .head-sec .title-row .wp-block-heading {
+  letter-spacing: 0 !important;
+}
+.slick-slide img {
+  width: 600px;
+  height: 400px;
+}
+.block-restaurant-features .each-card {
+  margin-top: 20px;
+}
+p.subtext_page {
+  margin-bottom: 20px !important;
+  max-width: 90%;
+}
+.single-restaurant-page .single-hero-sec.single-restaurant .btn-row .wp-block-image {
+  background: #fff !important;
+  margin-top: -95px !important;
+}
+.single-restaurant-page .single-hero-sec.single-restaurant .btn-row .wp-block-image img {
+  height: 100% !important;
+}
+.single-restaurant-page .single-hero-sec.single-restaurant .btn-row .wp-block-buttons {
+  margin: 29px 0 !important;
+}
+p.sub-text {
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+.single-hero-sec.food-court .wp-block-group__inner-container .hero-sub-text {
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+}
+.block-hero-slider .tab-section .single-tab .top-section .title-section svg {
+  height: 30px !important;
+}
+.block-hero-slider .tab-section .single-tab .top-section .title-section {
+  gap: 10px !important;
+}
+.block-slider-type-1 .single-slide .slide-title {
+  font-size: 24px !important;
+  margin-bottom: 10px !important;
+}
+.block-event-spaces .content-section .left .meta-details-container .single-details .info {
+  padding-top: 5px;
+  font-size: 16px !important;
+}
+
+// Mobile overrides (Markdown escaping removed from the supplied snippet).
+@media screen and (max-width: 1023px) {
+  .single-hero-sec.food-court .wp-block-group__inner-container .head-sec .title-row {
+    margin-top: 20px;
+  }
+  .single-hero-sec.food-court .wp-block-group__inner-container .head-sec .title-row .wp-block-image {
+    display: block !important;
+  }
+  .single-hero-sec.food-court .wp-block-group__inner-container .hero-sub-text {
+    margin: 20px 0 !important;
+  }
+  .header-main .mobile-only-icons-wrapper .header-navbar-mobile ul li.book a::before {
+    width: 26px;
+    height: 26px;
+    background-image: url("/wp-content/uploads/2024/09/icon-book.svg");
+  }
+  .header-main {
+    height: fit-content !important;
+  }
+  body {
+    padding-top: 60px !important;
+  }
+  .block-hero-slider .mobile-tab-section {
+    border-radius: 0 !important;
+    padding: 20px !important;
+  }
+  .fp-section-2 .wp-block-group__inner-container .wp-block-group.is-nowrap.title-sec h2 {
+    margin-bottom: 0 !important;
+  }
+  .fp-section-2 .wp-block-group__inner-container .wp-block-group.is-nowrap.bottom-sec .wp-block-buttons .wp-block-button a {
+    border: 2px solid #000 !important;
+    height: 60px !important;
+  }
+  .fp-section-4 .wp-block-group__inner-container > .wp-block-group.is-nowrap h2 {
+    margin-top: 40px;
+  }
+  .block-offers-slider .single-slide {
+    padding: 0 20px;
+    margin: 0 !important;
+    max-width: 350px !important;
+  }
+  .block-date-picker .content-wrapper .row-2 .single-row .left {
+    max-width: 100% !important;
+    margin: 20px 0 10px;
+  }
+  .sub-title.active {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .block-date-picker .content-wrapper .row-2 .single-row .right .each-content .bottom-content {
+    max-width: 120px;
+  }
+  .fp-sec-booking,
+  .single-page-activity .main-content .section-3 {
+    padding: 40px 0 !important;
+  }
+  .block-member-benefits {
+    padding: 30px 0 !important;
+  }
+  .header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap ul.mega-menu#mega-menu-header-menu {
+    top: 60px !important;
+  }
+  ul.mega-sub-menu {
+    margin-top: 10px !important;
+  }
+  .header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap ul.mega-menu#mega-menu-header-menu li.mega-menu-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8) !important;
+  }
+  .header-main .header-outer-wrapper #mega-menu-wrap-header-menu.mega-menu-wrap ul.mega-menu#mega-menu-header-menu li.mega-menu-item.mega-mobile-grid > ul.mega-sub-menu li.mega-menu-row.mega-locations-row > ul.mega-sub-menu li.mega-menu-column.mega-each-location > ul.mega-sub-menu li.mega-menu-item {
+    margin-top: -10px !important;
+  }
+  li#mega-menu-item-7 .mega-sub-menu {
+    margin-top: 5px !important;
+  }
+  .header-main a:hover {
+    color: #b3f0ff !important;
+  }
+  li#mega-menu-item-10,
+  li#mega-menu-item-183,
+  li#mega-menu-item-232,
+  li#mega-menu-item-7,
+  li#mega-menu-item-8 {
+    background-color: #000 !important;
+  }
+  .single-page-activity h2 {
+    padding-bottom: 20px;
+  }
+  .single-page-activity .main-content .section-3 .wrap {
+    gap: 25px !important;
+  }
+  .single-page-activity .main-content .section-3 .wrap .events-list .single-item {
+    padding: 20px 0 25px 10px !important;
+  }
+  .single-page-activity .main-content .section-6 {
+    padding: 20px 0 40px !important;
+  }
+  .block-academies-tab .academy-tab-content .tab-pane.active .tab-content-container,
+  .single-page-activity .sec-1-top-section .top-section-content .left .row {
+    gap: 0 !important;
+  }
+  .block-single-page-hero-carousel .bottom-section .wrap .left .img-div,
+  .single-hero-sec .wp-block-group__inner-container .btn-row .wp-block-button {
+    max-width: 100% !important;
+  }
+  .block-single-page-hero-carousel .bottom-section .wrap .left .img-div img {
+    padding: 10px !important;
+    object-fit: contain !important;
+  }
+  .single-academies-page .academy-sec-2 .wp-block-group__inner-container .wp-block-table table tbody,
+  .single-academies-page .academy-sec-2 .wp-block-group__inner-container .wp-block-table table thead th {
+    font-size: 14px !important;
+  }
+  .single-restaurant-page .single-hero-sec .wp-block-group__inner-container .head-sec .title-row .wp-block-image {
+    display: none;
+  }
+  .single-restaurant-page p.subtext_page {
+    max-width: 100% !important;
+    margin-top: 10px;
+  }
+  .single-restaurant-page .single-hero-sec.single-restaurant .btn-row .wp-block-image {
+    width: 100% !important;
+    margin: 0 20px;
+    height: 140px !important;
+  }
+  .single-restaurant-page .single-hero-sec.single-restaurant .btn-row .wp-block-buttons {
+    width: 100%;
+    margin: 0 20px 20px !important;
+  }
+}

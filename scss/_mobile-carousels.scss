@@ -1,0 +1,52 @@
+@media (max-width: 1023px) {
+  // Keep the slider viewport stable and clip only at the page edges.
+  body .mobile-edge-carousel {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    clip-path: inset(-100vh 0);
+
+    .slick-list {
+      transform: translateX(20px) !important;
+      overflow: hidden;
+    }
+
+    &.mobile-edge-started .slick-list {
+      overflow: visible;
+    }
+  }
+
+  // Native Event Spaces scrolling already uses a 20px inset and a full-width viewport.
+  :is(.page-id-834, .page-id-36, .page-id-1495) .event-space-cards .space-card-row {
+    padding-left: 20px;
+    padding-right: 20px;
+    scroll-padding-inline: 20px;
+  }
+}
+
+// The birthday page uses the same content-aligned start on every screen size.
+body:is(.page-id-834, .page-id-36, .page-id-1495) .birthday-edge-carousel {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  clip-path: inset(-100vh 0);
+  transition: none;
+
+  .slick-list {
+    transform: translateX(var(--birthday-slider-inset, max(20px, calc((100vw - 1080px) / 2)))) !important;
+    overflow: hidden;
+    // Offset updates must settle immediately before Slick positions the track.
+  }
+
+  &.mobile-edge-started .slick-list {
+    overflow: visible;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .slick-list { transition: none; }
+  }
+}

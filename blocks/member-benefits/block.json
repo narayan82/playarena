@@ -1,0 +1,21 @@
+{
+  "apiVersion": 3,
+  "name": "acf/member-benefits",
+  "title": "Member Benefits",
+  "description": "A custom Member Benefits block.",
+  "style": ["file:./css/member-benefits.min.css"],
+  "script": ["member-benefits.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["member-benefits", "Member Benefits", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "member-benefits.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "1.0.10"
+}

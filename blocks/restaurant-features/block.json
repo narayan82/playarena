@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/restaurant-features",
+  "title": "Restaurant Features",
+  "description": "A custom Restaurant Features block.",
+  "style": ["file:./css/restaurant-features.min.css"],
+  "script": ["restaurant-features.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["restaurant-features", "Restaurant Features", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "restaurant-features.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

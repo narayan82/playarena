@@ -1,0 +1,21 @@
+{
+  "apiVersion": 3,
+  "name": "acf/hero-slider",
+  "title": "Hero Slider",
+  "description": "A custom Hero Slider block.",
+  
+  "script": ["hero-slider.js", "slick.min.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["hero-slider", "Hero Slider", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "hero-slider.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "1.0.42"
+}

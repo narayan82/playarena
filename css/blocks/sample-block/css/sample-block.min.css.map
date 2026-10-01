@@ -1,0 +1,1 @@
+{"version":3,"sources":["sample-block/scss/sample-block.scss"],"names":[],"mappings":"AAEI,sBACE,gBAAA,CAKN,KACE,oBAAA","file":"../../../../blocks/sample-block/css/sample-block.min.css","sourcesContent":[".sample-block {\r\n  p {\r\n    &:after {\r\n      content: \"Loaded\";\r\n    }\r\n  }\r\n}\r\n\r\nbody {\r\n  background-color: red;\r\n}\r\n"]}

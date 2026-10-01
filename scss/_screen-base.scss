@@ -1,0 +1,26 @@
+// Existing theme styles, isolated so their @extend rules stay within this module.
+@import "variables";
+@import "reset";
+@import "header";
+@import "hero-slider";
+@import "slick";
+@import "jquery-ui";
+@import "common";
+@import "home";
+@import "glightbox";
+@import "footer";
+@import "single-event";
+@import "archive-academies";
+@import "single-academies";
+@import "archive-event";
+@import "single-activity";
+@import "archive-activity";
+@import "food-court-page";
+@import "single-restaurant";
+@import "catering-page";
+@import "archive-restaurant";
+@import "taxonomy-location";
+@import "hamburger-mobile";
+@import "food-court";
+@import "enquiry-form";
+@import "home-new";

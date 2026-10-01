@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/food-item-list",
+  "title": "Food Item List",
+  "description": "A custom Food Item List block.",
+  "style": ["file:./css/food-item-list.min.css"],
+  "script": ["food-item-list.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["food-item-list", "Food Item List", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "food-item-list.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

@@ -1,0 +1,13 @@
+// Keep Play Dates' existing soft green palette within the shared event layout.
+body.page-id-1495 {
+  --event-activity-background: #d1ebd8;
+
+  .block-tab-block .tab-section > .wrap .tab-wrap {
+    margin-bottom: 28px;
+  }
+
+  .single-hero-sec {
+    background-color: #d1ebd8;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.12));
+  }
+}

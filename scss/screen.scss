@@ -1,0 +1,26 @@
+// Keep plugin overrides last and outside the legacy @extend scope.
+@use "screen-base";
+@use "custom-overrides";
+@use "plugin-customizations";
+@use "home-enquiry";
+@use "hero-glass";
+@use "home-ticker";
+@use "header-glass";
+@use "mobile-header";
+@use "birthday-hero";
+@use "birthday-age-bar";
+@use "birthday-spaces";
+@use "birthday-food";
+@use "mobile-carousels";
+@use "corporate-event";
+@use "play-dates-event";
+
+@use "enquiry-panel";
+
+@use "activity-selector";
+
+@use "activity-overview";
+
+@use "food-court-glass";
+
+@use "academies-glass";

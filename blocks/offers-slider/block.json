@@ -1,0 +1,21 @@
+{
+  "apiVersion": 3,
+  "name": "acf/offers-slider",
+  "title": "Offers Slider",
+  "description": "A custom Offers Slider block.",
+  "style": ["file:./css/offers-slider.min.css"],
+  "script": ["offers-slider.js", "slick.min.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["offers-slider", "Offers Slider", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "offers-slider.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "1.0.5"
+}

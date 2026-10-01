@@ -1,0 +1,25 @@
+{
+  "apiVersion": 3,
+  "name": "acf/single-page-hero-carousel",
+  "title": "Single Page Hero Carousel",
+  "description": "A custom Single Page Hero Carousel block.",
+  "style": ["file:./css/single-page-hero-carousel.min.css"],
+  "script": ["single-page-hero-carousel.js", "slick.min.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": [
+    "single-page-hero-carousel",
+    "Single Page Hero Carousel",
+    "custom",
+    "matsio"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "single-page-hero-carousel.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

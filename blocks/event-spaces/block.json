@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/event-spaces",
+  "title": "Event Spaces",
+  "description": "A custom Event Spaces block.",
+  "style": ["file:./css/event-spaces.min.css"],
+  "script": ["event-spaces.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["event-spaces", "Event Spaces", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "event-spaces.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

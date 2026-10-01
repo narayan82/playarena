@@ -1,0 +1,282 @@
+@import "../../../scss/_variables.scss";
+
+.block-featured-events {
+  display: flex;
+  gap: ptr(74.5px);
+  @include mobile {
+    gap: ptr(50px);
+    flex-wrap: wrap;
+  }
+  .each-content {
+    display: flex;
+    width: calc((100% - ptr(150px)) / 3);
+    flex-direction: column;
+
+    @include mobile {
+      width: 100%;
+    }
+    .top-sec {
+      display: flex;
+      gap: ptr(20px);
+      position: relative;
+      align-items: center;
+      padding-bottom: ptr(26px);
+      border-bottom: 1px solid #000;
+
+      &::after {
+        content: "";
+        display: none;
+        width: ptr(20px);
+        height: ptr(20px);
+        justify-self: flex-end;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../../../img/right-arrow-black-line.svg");
+
+        @include mobile {
+          display: block;
+        }
+      }
+      @include mobile {
+        gap: ptr(12px);
+        padding-bottom: ptr(18px);
+      }
+      img {
+        width: auto;
+        display: block;
+        height: ptr(56px);
+        max-width: ptr(56px);
+        @include mobile {
+          width: auto;
+          height: ptr(34px);
+          max-width: ptr(36px);
+        }
+      }
+      .event-title {
+        font-weight: 400;
+        white-space: nowrap;
+        font-size: ptr(28px);
+        line-height: ptr(37px);
+
+        @include mobile {
+          flex-grow: 1;
+          font-size: ptr(24px);
+        }
+      }
+    }
+    .img-div {
+      width: 100%;
+      margin: ptr(17px) 0;
+      @include mobile {
+        margin: ptr(14px) 0;
+      }
+      img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: ptr(150px);
+      }
+    }
+    .content-div {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .top {
+        flex-grow: 1;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: ptr(16px);
+      }
+      .btn-container {
+        width: 100%;
+        margin-top: ptr(30.8px);
+        @include mobile {
+          display: none;
+        }
+        .button {
+          width: 100%;
+          color: $black;
+          width: 100%;
+          display: flex;
+          font-weight: 500;
+          transition: all 0.4s;
+          font-size: ptr(16px);
+          max-width: ptr(190px);
+          border-radius: ptr(8px);
+          border: 1px solid $black;
+          justify-content: space-between;
+          background-color: transparent;
+          padding: ptr(15px) ptr(12px) ptr(14px) ptr(18px);
+          svg {
+            path {
+              transition: all 0.4s;
+            }
+          }
+
+          &:hover {
+            color: $white;
+            background-color: $black;
+            border-color: transparent;
+
+            svg {
+              path {
+                fill: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Homepage: keep each occasion together as a complete, equal-height card.
+.home .fp-section-2 .block-featured-events {
+  & {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+    // Soft color behind the translucent panels makes the frosted surface visible.
+    background:
+      radial-gradient(ellipse at 8% 25%, rgba(205, 187, 231, 0.65), transparent 42%),
+      radial-gradient(ellipse at 52% 75%, rgba(242, 253, 172, 0.55), transparent 45%),
+      radial-gradient(ellipse at 96% 30%, rgba(178, 221, 214, 0.6), transparent 42%);
+
+    .each-content {
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 0;
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      color: #24221f;
+      background: rgba(255, 249, 242, 0.85);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.3),
+        0 12px 32px rgba(66, 46, 31, 0.09);
+
+      @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 249, 242, 0.28));
+        -webkit-backdrop-filter: blur(18px) saturate(125%);
+        backdrop-filter: blur(18px) saturate(125%);
+      }
+
+      .top-sec {
+        min-height: 0;
+        gap: 14px;
+        padding-bottom: 12px;
+        border-bottom: none !important;
+
+        &::after { display: none; }
+
+        img {
+          display: none;
+        }
+
+        .event-title {
+          margin: 0;
+          font-size: 24px;
+          line-height: 1.2;
+          font-weight: 500;
+          white-space: normal;
+        }
+      }
+
+      .img-div {
+        order: -1;
+        margin: 0 0 24px !important;
+        overflow: hidden;
+        border-radius: 12px;
+
+        img {
+          width: 100%;
+          height: 170px;
+          object-fit: contain;
+        }
+      }
+
+      .content-div {
+        margin-top: 0 !important;
+        .top, p {
+          font-size: 16px;
+          line-height: 1.65;
+        }
+
+        .btn-container {
+          display: block;
+          margin-top: 28px;
+
+          .button {
+            box-sizing: border-box;
+            width: 100%;
+            max-width: none;
+            min-height: 52px;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 18px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.42);
+            color: #24221f;
+            border-color: rgba(44, 31, 23, 0.22);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+            svg { flex-shrink: 0; }
+            svg path { fill: currentColor; }
+
+            &:hover {
+              background: #171714;
+              color: #fff9f2;
+              border-color: #171714;
+              svg path { fill: currentColor; }
+            }
+
+            &:focus-visible {
+              outline: 3px solid #171714;
+              outline-offset: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1100px) and (min-width: 768px) {
+    & {
+      gap: 16px;
+      .each-content {
+        padding: 20px;
+        .top-sec {
+          align-items: center;
+          flex-direction: row;
+          gap: 8px;
+          min-height: 0;
+          .event-title { font-size: 20px; }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    & {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 20px;
+      .each-content {
+        padding: 24px;
+        .top-sec {
+          min-height: 0;
+          gap: 10px;
+          .event-title { font-size: 24px; }
+        }
+        .img-div img { height: 160px; }
+      }
+    }
+  }
+}

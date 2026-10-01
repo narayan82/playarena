@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/slider-type-1",
+  "title": "Slider Type 1",
+  "description": "A custom Slider Type 1 block.",
+  "style": ["file:./css/slider-type-1.min.css"],
+  "script": ["slider-type-1.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["slider-type-1", "Slider Type 1", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "slider-type-1.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

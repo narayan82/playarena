@@ -1,0 +1,16 @@
+.archive-academy-title-sec {
+  background-color: $lightBlue;
+  padding-top: ptr(33px);
+  .wrap {
+    max-width: $content_width;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: ptr(36px);
+    line-height: ptr(45px);
+    padding-bottom: ptr(40px);
+    @include mobile {
+      padding-bottom: ptr(20px);
+    }
+  }
+}

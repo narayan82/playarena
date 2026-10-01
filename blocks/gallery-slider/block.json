@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/gallery-slider",
+  "title": "Gallery Slider",
+  "description": "A custom Gallery Slider block.",
+  "style": ["file:./css/gallery-slider.min.css"],
+  "script": ["gallery-slider.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["gallery-slider", "Gallery Slider", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "gallery-slider.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

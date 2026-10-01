@@ -1,0 +1,69 @@
+// Turn the existing homepage enquiry link into one clear call to action.
+.home .fp-section-2 .wp-block-group__inner-container .wp-block-group.bottom-sec {
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+
+  .enquiry_link {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    // The editor stores a trailing exclamation mark outside the link.
+    font-size: 0;
+    line-height: 0;
+
+    a {
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      width: 100%;
+      max-width: 100%;
+      padding: 20px 26px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 16px;
+      background: #242622;
+      color: #f2fdac !important;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      text-decoration: none;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 8px 20px rgba(44, 31, 23, 0.12);
+      transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+      &::after {
+        content: "\2197";
+        flex-shrink: 0;
+        font-size: 28px;
+        line-height: 1;
+      }
+
+      &:hover {
+        background: #f2fdac;
+        color: #242622 !important;
+        box-shadow: 0 10px 24px rgba(44, 31, 23, 0.15);
+      }
+
+      &:focus-visible {
+        outline: 3px solid #242622;
+        outline-offset: 4px;
+      }
+    }
+  }
+
+  // The adjacent “Find out more” button leads to the same enquiry page.
+  > .wp-block-buttons { display: none; }
+
+  @media (max-width: 767px) {
+    .enquiry_link {
+      width: 100%;
+      a {
+        width: 100%;
+        padding: 18px 20px;
+        gap: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+}

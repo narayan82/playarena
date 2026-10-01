@@ -1,0 +1,21 @@
+{
+  "apiVersion": 2,
+  "name": "acf/pre-packed-fun",
+  "title": "Pre packed Fun",
+  "description": "A custom Pre packed Fun block.",
+  "style": ["file:./css/pre-packed-fun.min.css"],
+  "script": ["pre-packed-fun.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["pre-packed-fun", "Pre packed Fun", "custom", "matsio"],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "pre-packed-fun.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "2.1.9"
+}

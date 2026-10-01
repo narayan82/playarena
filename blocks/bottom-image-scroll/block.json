@@ -1,0 +1,26 @@
+{
+  "apiVersion": 2,
+  "name": "acf/bottom-image-scroll",
+  "title": "Bottom Image Scroll",
+  "description": "A custom Bottom Image Scroll block.",
+  "style": ["file:./css/bottom-image-scroll.min.css"],
+  "script": ["bottom-image-scroll.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": [
+    "bottom-image-scroll",
+    "Bottom Image Scroll",
+    "custom",
+    "matsio"
+  ],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "bottom-image-scroll.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "version": "2.2.3"
+}

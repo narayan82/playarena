@@ -1,0 +1,284 @@
+h2 {
+  color: $black;
+  font-weight: 700;
+  font-size: ptr(36px);
+  line-height: ptr(45px);
+}
+p {
+  color: $black;
+  font-weight: 500;
+  font-size: ptr(16px);
+  line-height: ptr(26px);
+}
+h2{
+  color: $black;
+  font-weight: 700;
+  font-size: ptr(48px);
+  line-height: ptr(55px);
+  @include mobile {
+    font-size: ptr(34px);
+    line-height: ptr(43px);
+  }
+}
+.h1 {
+  color: $black;
+  font-weight: 400;
+  font-size: ptr(48px);
+  line-height: ptr(84px);
+  @include mobile {
+    font-size: ptr(28px);
+    line-height: ptr(33px);
+    margin-bottom: ptr(10px);
+  }
+  strong {
+    font-weight: 300;
+  }
+}
+
+.h3 {
+  color: #000;
+  font-size: ptr(28px);
+  font-weight: 400;
+  line-height: 33.32px;
+  margin-top: ptr(24px);
+  margin-bottom: ptr(6px);
+  @include mobile {
+    font-size: ptr(22px);
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: ptr(20px);
+    margin-bottom: ptr(4px);
+    max-width: ptr(235px);
+  }
+}
+.p1 {
+  color: $black;
+  font-weight: 500;
+  font-size: ptr(16px);
+  line-height: ptr(26px);
+}
+.p2 {
+  color: $black;
+  font-weight: 300;
+  font-size: ptr(16px);
+  line-height: ptr(26px);
+  max-width: ptr(658px) !important;
+  &.has-text-align-center {
+    margin: 0 auto;
+  }
+  @include mobile {
+    font-size: ptr(14px);
+    max-width: 100% !important;
+    line-height: ptr(19px);
+    br {
+      display: none;
+    }
+  }
+}
+.p-regular {
+  font-weight: 400;
+  font-size: ptr(16px);
+  line-height: ptr(26px);
+  @include mobile {
+    font-size: ptr(14px);
+  }
+}
+.button-div {
+  gap: ptr(8px);
+  display: flex;
+  flex-wrap: wrap;
+  .button {
+    color: $white;
+    display: flex;
+    gap: ptr(21px);
+    font-weight: 500;
+    white-space: nowrap;
+    align-items: center;
+    font-size: ptr(16px);
+    line-height: ptr(16px);
+    border-radius: ptr(8px);
+    background-color: #0371e6;
+    font-family: $button_font;
+    padding: ptr(18px) ptr(20px) ptr(16px) ptr(20px);
+    &::after {
+      content: "";
+      display: block;
+      width: ptr(16px);
+      height: ptr(16px);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../img/button-arrow.svg");
+    }
+  }
+}
+.wp-block-buttons {
+  .wp-block-button {
+    .wp-block-button__link {
+      color: $white;
+      display: flex;
+      gap: ptr(21px);
+      font-weight: 500;
+      white-space: nowrap;
+      align-items: center;
+      font-size: ptr(16px);
+      line-height: ptr(16px);
+      border-radius: ptr(8px);
+      background-color: $blue;
+      font-family: $button_font;
+      padding: ptr(18px) ptr(20px) ptr(16px) ptr(20px);
+      &::after {
+        content: "";
+        display: block;
+        width: ptr(16px);
+        height: ptr(16px);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../img/button-arrow.svg");
+      }
+    }
+  }
+}
+.pager-div {
+  .prev,
+  .next {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+.slick-arrow {
+  display: flex;
+  width: ptr(32px);
+  height: ptr(32px);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  top: calc(50% - ptr(16px));
+
+  svg {
+    width: auto;
+    display: block;
+    height: ptr(21px);
+  }
+  &.prev {
+    left: 0;
+    border-radius: 0 ptr(8px) ptr(8px) 0;
+  }
+  &.next {
+    right: 0;
+    border-radius: ptr(8px) 0 0 ptr(8px);
+  }
+}
+
+.each-event {
+  display: flex;
+  overflow: hidden;
+  margin: 0 ptr(10px);
+  max-width: ptr(525px);
+  flex-direction: column;
+  border-radius: ptr(5px);
+  border: 1px solid $black;
+  height: inherit !important;
+  width: calc((100% - ptr(40px)) / 2);
+  @include mobile {
+    width: 100%;
+    max-width: ptr(294px);
+  }
+  .top {
+    display: flex;
+    gap: ptr(32px);
+    border-bottom: 1px solid #8b8b8b;
+
+    .left {
+      width: 100%;
+      display: flex;
+      min-height: ptr(80px);
+      flex-direction: column;
+      justify-content: center;
+      padding: ptr(16px) 0 0 ptr(30px);
+      @include mobile {
+        padding: ptr(25px) 0 ptr(25px) ptr(25px);
+      }
+      h2 {
+        font-size: ptr(40px);
+        line-height: ptr(50px);
+        @include mobile {
+          font-size: ptr(24px);
+          line-height: ptr(30px);
+        }
+      }
+    }
+    .right {
+      width: 100%;
+      max-width: ptr(143px);
+      border-left: 1px solid $black;
+      @include mobile {
+        max-width: ptr(117px);
+      }
+      .date {
+        background-color: $black;
+        padding: ptr(17px) ptr(10px);
+        border-bottom: 1px solid #8b8b8b;
+
+        .day {
+          color: $white;
+          text-align: center;
+          font-size: ptr(42px);
+        }
+        .month {
+          color: $white;
+          text-align: center;
+          font-size: ptr(16px);
+        }
+      }
+      .day-name {
+        color: $black;
+        line-height: 100%;
+        text-align: center;
+        font-size: ptr(16px);
+        padding: ptr(8px) 0;
+        background-color: $white;
+      }
+    }
+  }
+  .content-div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: ptr(23px) ptr(13px) ptr(14px) ptr(30px);
+    @include mobile {
+      gap: ptr(12px);
+      flex-direction: row;
+      padding: ptr(17px) ptr(16px) ptr(20px) ptr(25px);
+    }
+    p {
+      color: $black;
+      overflow: hidden;
+      font-weight: 300;
+      display: -webkit-box;
+      font-size: ptr(16px);
+      line-height: ptr(25px);
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      max-width: calc(100% - ptr(143px));
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+    img {
+      display: block;
+      width: ptr(24px);
+      height: ptr(24px);
+      margin: ptr(12px) ptr(5px) ptr(12px) auto;
+      @include mobile {
+        margin: auto 0 0 0;
+      }
+    }
+  }
+}

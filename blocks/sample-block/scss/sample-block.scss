@@ -1,0 +1,11 @@
+.sample-block {
+  p {
+    &:after {
+      content: "Loaded";
+    }
+  }
+}
+
+body {
+  background-color: red;
+}

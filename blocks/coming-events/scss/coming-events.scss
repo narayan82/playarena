@@ -1,0 +1,117 @@
+@import "../../../scss/_variables.scss";
+
+.block-coming-events {
+  position: relative;
+  padding: ptr(68px) 0 ptr(125px) 0;
+  @include mobile {
+    padding: ptr(19px) 0 ptr(125px);
+  }
+  .block-header-section {
+    .wrap {
+      display: flex;
+      gap: ptr(40px);
+      align-items: center;
+      margin-bottom: ptr(37px);
+      justify-content: space-between;
+      @include mobile {
+        flex-wrap: wrap;
+      }
+      .button-div {
+        @include mobile {
+          right: 0;
+          top: auto;
+          left: ptr(20px);
+          bottom: ptr(50px);
+          position: absolute;
+        }
+        .button::after {
+          background-image: url("../../../img/right-arrow-white.svg");
+        }
+      }
+    }
+  }
+  .events-outer-wrap {
+    width: 100%;
+    position: relative;
+    padding-left: calc((100% - ($boxed_content_width - ptr(80px))) / 2);
+  }
+  .events-inner-container {
+  }
+  .content-wrapper {
+    gap: ptr(20px);
+    display: flex;
+
+    .slick-track {
+      display: flex !important;
+    }
+    .slick-slide {
+      height: inherit !important;
+    }
+  }
+  .slick-dots {
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    gap: ptr(10px);
+    bottom: ptr(-36px);
+    position: absolute;
+    transform: translate(-50%, 0);
+    @include mobile {
+      display: none !important;
+    }
+    li {
+      button {
+        margin: 0;
+        padding: 0;
+        width: ptr(8px);
+        height: ptr(8px);
+        overflow: hidden;
+        border-radius: 50%;
+        text-indent: -9999px;
+        border: 1px solid $black;
+        background-color: $white;
+      }
+      &.slick-active {
+        button {
+          background-color: $black;
+        }
+      }
+    }
+  }
+  .slick-arrow {
+    display: flex;
+    width: ptr(32px);
+    height: ptr(32px);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    top: calc(50% - ptr(16px));
+
+    svg {
+      width: auto;
+      display: block;
+      height: ptr(9px);
+    }
+    &.prev {
+      left: 0;
+      border-radius: 0 ptr(8px) ptr(8px) 0;
+    }
+    &.next {
+      right: 0;
+      border-radius: ptr(8px) 0 0 ptr(8px);
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .pager-div {
+    .prev,
+    .next {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

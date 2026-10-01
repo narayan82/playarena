@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "acf/tab-block",
+  "title": "Tab block",
+  "description": "A custom Tab block block.",
+  "style": ["file:./css/tab-block.min.css"],
+  "script": ["tab-block.js", "jquery"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["tab-block", "Tab block", "custom", "matsio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tab-block.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+} 

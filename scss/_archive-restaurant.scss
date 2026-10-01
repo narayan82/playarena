@@ -1,0 +1,54 @@
+.restaurant-archive-page {
+  .top-section {
+    background-color: #ccc;
+    padding: 60px 0;
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    p {
+    }
+  }
+  .content-wrapper {
+    margin-top: 24px;
+    .count {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+    .restaurant-outer-wrapper {
+      display: flex;
+      gap: 20px;
+      .each-restaurant {
+        color: #000;
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        width: calc((100% - 40px) / 3);
+        border: 1px solid rgb(93, 93, 91);
+        .top {
+          display: flex;
+          flex-grow: 1;
+        }
+        h2 {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 12px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .img-div {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
